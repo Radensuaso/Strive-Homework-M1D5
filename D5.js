@@ -137,8 +137,20 @@ console.log(reverseString("Hey man hope you are ok."));
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR CODE HERE */
+drawHeader("exercise 8");
 
+const upperFirst = function(string) {
+    const words = string.split(" ");
+    let capitalizedWords = [];
+    for (let i = 0; i < words.length; i++) {
+        capitalizedWords.push(words[i].charAt(0).toUpperCase() + words[i].slice(1))
+    }
+    return capitalizedWords.join(" ");
+}
+
+console.log(upperFirst("superman beats batman"));
+console.log(upperFirst("alliens are cool"));
+console.log(upperFirst("what is the universe?"));
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
