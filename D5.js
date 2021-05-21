@@ -24,11 +24,27 @@ console.log(area(4, 10));
 /* EXERCISE 2
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
+drawHeader("exercise 2");
+
+const crazySum = function(n1, n2) {
+    if (n1 === n2) {
+        return (n1 + n2) * 3;
+    } else {
+        return n1 + n2;
+    }
+}
+
+console.log(crazySum(3, 3));
+console.log(crazySum(3, 4));
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
 It should return triple their absolute difference if the given number is greater than 19.
 */
+drawHeader("exercise 3");
+
+
+
 
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
