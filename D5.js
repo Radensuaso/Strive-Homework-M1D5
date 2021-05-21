@@ -154,8 +154,17 @@ console.log(upperFirst("what is the universe?"));
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
+drawHeader("exercise 9");
 
-/* WRITE YOUR CODE HERE */
+const cutString = function (string) {
+    const lastCharIndex = string.length - 1;
+    return string.slice(1, lastCharIndex);
+}
+
+console.log(cutString("Strive School"));
+console.log(cutString("Water"));
+console.log(cutString("Hey man, what's up?"));
+
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
