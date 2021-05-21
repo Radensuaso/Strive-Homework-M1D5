@@ -60,6 +60,18 @@ Write a function "boundary" which accept an integer n and returns true if n is w
 */
 drawHeader("exercise 4");
 
+const boundary = function(n) {
+    if ((n >= 20 && n <= 100) || n === 400) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(boundary(400));
+console.log(boundary(30));
+console.log(boundary(19));
+console.log(boundary(20));
 
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
