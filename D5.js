@@ -43,14 +43,23 @@ It should return triple their absolute difference if the given number is greater
 */
 drawHeader("exercise 3");
 
+const crazyDiff = function(number) {
+    const absoluteDiff = Math.abs(19 - number);
+    if (absoluteDiff > 19) {
+        return absoluteDiff * 3;
+    } else {
+        return absoluteDiff;
+    }
+}
 
-
+console.log(crazyDiff(40));
+console.log(crazyDiff(20));
 
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
+drawHeader("exercise 4");
 
-/* WRITE YOUR CODE HERE */
 
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
