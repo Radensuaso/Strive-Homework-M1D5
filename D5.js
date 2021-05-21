@@ -121,7 +121,17 @@ console.log(check3and7(69));
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR CODE HERE */
+drawHeader("exercise 7");
+
+const reverseString = function (string) {
+    return string.split("").reverse().join("");
+}   
+
+console.log(reverseString("Strive"));
+console.log(reverseString("I'm Pickle Rick."));
+console.log(reverseString("Games Night."));
+console.log(reverseString("Hey man hope you are ok."));
+
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
