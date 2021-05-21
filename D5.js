@@ -6,9 +6,20 @@ ASSIGNMENT RULES
 - You can Google / use StackOverflow BUT we suggest you to use just the material provided
 */
 
+const drawHeader = function(heading) {
+    console.log(`\n-------------------------< ${heading.toUpperCase()} >-----------------------------\n`);
+}
+
 /* EXERCISE 1
 Write a function "area" which receives 2 parameters (l1,l2) and calculates the area of the associated rectangle.
 */
+drawHeader("exercise 1");
+
+const area = function(l1, l2) {
+    return l1 * l2;
+}
+
+console.log(area(4, 10));
 
 /* EXERCISE 2
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
